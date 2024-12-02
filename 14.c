@@ -1,7 +1,9 @@
 
+
+// -----------     BUJA NAI     -------------------
+
 #include <stdio.h>
 
-// Function to find the length of the longest increasing subsequence
 int longestIncreasingSubsequence(int arr[], int n) {
     int lis[n]; // Array to store the longest increasing subsequence lengths
     int maxLength = 0;
@@ -33,22 +35,18 @@ int longestIncreasingSubsequence(int arr[], int n) {
 int main() {
     int n;
 
-    // Input the number of elements in the array
     printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
 
-    int arr[n]; // Declare an array of size n
+    int arr[n];
 
-    // Input elements of the array
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    // Calculate the length of the longest increasing subsequence
     int length = longestIncreasingSubsequence(arr, n);
 
-    // Output the result
     printf("Length of the longest increasing subsequence is: %d\n", length);
 
     return 0;

@@ -4,7 +4,7 @@
 void printPrimeFactors(int num) {
     
     while (num % 2 == 0) {
-        printf("%d ", 2);
+        printf("2 ");
         num /= 2;
     }
 

@@ -1,7 +1,6 @@
 
 #include <stdio.h>
 
-// Function to swap using call-by-value
 void swapByValue(int a, int b) {
     int temp;
     temp = a;
@@ -11,12 +10,12 @@ void swapByValue(int a, int b) {
     printf("Inside swapByValue: a = %d, b = %d\n", a, b);
 }
 
-// Function to swap using call-by-reference
+
 void swapByReference(int *a, int *b) {
     int temp;
-    temp = *a; // Dereference to get the value at the address
-    *a = *b;   // Assign the value of b to a
-    *b = temp; // Assign the temp value to b
+    temp = *a;
+    *a = *b;
+    *b = temp;
 
     printf("Inside swapByReference: *a = %d, *b = %d\n", *a, *b);
 }
@@ -25,7 +24,7 @@ int main() {
     int x, y;
 
     // Input two numbers from the user
-    printf("Enter two integers:\n");
+    printf("Enter two integers: ");
     scanf("%d %d", &x, &y);
 
     // Display original values
