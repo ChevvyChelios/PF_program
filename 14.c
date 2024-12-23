@@ -35,7 +35,7 @@ int longestIncreasingSubsequence(int arr[], int n) {
 int main() {
     int n;
 
-    printf("Enter the number of elements in the array: ");
+    printf("Enter size of array: ");
     scanf("%d", &n);
 
     int arr[n];

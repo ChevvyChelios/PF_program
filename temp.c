@@ -1,29 +1,34 @@
+#include <stdio.h>
 
-#include<stdio.h>
-#include<stdlib.h>
+#define MAX 20 // Maximum size of the matrix
 
-int main(){
-    FILE *file;
-    char filename[100];
-    char ch;
+void printTriangle(int arr[20][20], int n){
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i>=j)
+                printf("%d ", arr[i][j]);
+            else
+                printf("0 ");
+        }
+        printf("\n");
+    }
+}
 
-    printf("File name: ");
-    scanf("%s", filename);
+int main() {
+    int n, i, j;
+    int matrix[MAX][MAX];
+    printf("Enter size: ");
+    scanf("%d", &n);
 
-    file = fopen(filename, "r");
-
-    if (file == NULL){
-        perror("Error opening file.\n");
-        return EXIT_FAILURE;
+    printf("Enter the elements of the lower triangular matrix:\n");
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++) {
+            printf("Element [%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
+        }
     }
 
-    printf("Contents are: \n");
-    while((ch = fgetc(file)) != EOF){
-        putchar(ch);
-    }
+    printTriangle(matrix,n);
 
-    fclose(file);
-
-    printf("\n");
-    return EXIT_SUCCESS;
+    return 0;
 }

@@ -7,7 +7,7 @@ void swapByValue(int a, int b) {
     a = b;
     b = temp;
 
-    printf("Inside swapByValue: a = %d, b = %d\n", a, b);
+    printf("Inside swap-By-Value: a = %d, b = %d\n", a, b);
 }
 
 
@@ -17,7 +17,7 @@ void swapByReference(int *a, int *b) {
     *a = *b;
     *b = temp;
 
-    printf("Inside swapByReference: *a = %d, *b = %d\n", *a, *b);
+    printf("Inside swap-By-Reference: *a = %d, *b = %d\n", *a, *b);
 }
 
 int main() {

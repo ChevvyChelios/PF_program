@@ -34,7 +34,7 @@ int main() {
     int rows, cols;
 
     // Input dimensions of the matrix
-    printf("Enter the number of rows and columns of the matrix: ");
+    printf("Enter row and col size for matrix: ");
     scanf("%d %d", &rows, &cols);
 
     // Input matrix elements
@@ -47,6 +47,7 @@ int main() {
     transposeMatrix(matrix, transpose, rows, cols);
 
     // Print transposed matrix
+    printf("After Transposed\n");
     printMatrix(transpose, cols, rows);
 
     return 0;

@@ -15,7 +15,7 @@ int findMissingNumber(int arr[], int n) {
 int main() {
     int n;
 
-    printf("Enter the value of n (size of the array): ");
+    printf("Enter the size of the array: ");
     scanf("%d", &n);
 
     int arr[n - 1];
